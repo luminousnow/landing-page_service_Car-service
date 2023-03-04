@@ -11,6 +11,10 @@ html {
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -80,8 +84,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  max-width: 1200px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
