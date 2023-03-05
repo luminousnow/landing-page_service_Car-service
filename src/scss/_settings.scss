@@ -13,7 +13,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -94,6 +95,7 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  height: 100%;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
