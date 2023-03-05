@@ -103,6 +103,7 @@ const styles = () => {
         overrideBrowserslist: ["last 5 versions"],
       })
     )
+    .pipe(gulpif(isProd, replace("../../img/", "../img/")))
     .pipe(
       gulpif(
         isProd,
@@ -330,6 +331,7 @@ const rewrite = () => {
 
 const htmlMinify = () => {
   return src(`${buildFolder}/**/*.html`)
+    .pipe(gulpif(isProd, replace("../img/", "img/")))
     .pipe(
       htmlmin({
         collapseWhitespace: true,
