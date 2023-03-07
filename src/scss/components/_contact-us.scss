@@ -1,0 +1,70 @@
+.contact-us {
+  background: var(--bg-color-dark);
+}
+
+.contact-us__inner {
+  padding: 97px 0;
+}
+.contact-us__title {
+  padding: 46px 0;
+
+  color: var(--text-color-light);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.contact-us__form-container {
+  width: 440px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__input {
+    margin-bottom: 45px;
+    border-bottom: 1px solid #ffffff;
+    width: 197px;
+    height: 33px;
+    background: transparent;
+
+    letter-spacing: 0.15em;
+    color: #ffffff;
+  }
+
+  &__input::placeholder {
+    letter-spacing: 0.15em;
+    color: #ffffff;
+  }
+
+  &__input--wide {
+    width: 440px;
+    height: 131px;
+    resize: none;
+  }
+
+  &__btn {
+    padding: 11px;
+    min-width: 198px;
+    max-width: 440px;
+    overflow: hidden;
+    background: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-light);
+
+    transition: all 300ms ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--bg-color-light);
+      color: var(--accent-color);
+    }
+  }
+}
