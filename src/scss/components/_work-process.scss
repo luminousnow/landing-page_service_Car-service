@@ -1,0 +1,57 @@
+.work-process {
+  background: var(--bg-color-light);
+}
+
+.work-process__inner {
+  padding: 156px 0 100px;
+}
+
+.work-process__slogan {
+  margin-bottom: 58px;
+
+  color: var(--text-color-dark);
+  font-weight: 900;
+  font-size: 148px;
+  text-transform: uppercase;
+}
+
+.work-process__title {
+  margin-bottom: 92px;
+
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.work-process__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.process-card {
+  width: 386px;
+  min-height: 150px;
+  padding: 30px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.process-card__title {
+  margin-bottom: 15px;
+
+  color: var(--text-color-dark);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.process-card__description {
+  color: var(--text-color-dark);
+  font-size: 18px;
+  opacity: 0.8;
+}
