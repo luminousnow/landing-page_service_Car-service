@@ -12,13 +12,14 @@
   text-transform: uppercase;
 }
 
-.services__all-link {
+.services__more-link {
   display: flex;
   margin-bottom: 60px;
 
   color: var(--text-color-dark);
   letter-spacing: 0.15em;
   text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 .services__list {
