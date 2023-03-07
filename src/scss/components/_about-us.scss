@@ -1,0 +1,49 @@
+.about-us {
+  padding: 117px 0;
+
+  background: var(--bg-color-dark);
+}
+
+.about-us__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.about-us__description {
+  width: 515px;
+}
+
+.about-us__title {
+  margin-bottom: 42px;
+
+  color: var(--text-color-light);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.about-us__text {
+  margin-bottom: 48px;
+
+  color: var(--text-color-light);
+  font-weight: 600;
+  letter-spacing: 0.23em;
+}
+
+.about-us__more-link {
+  display: flex;
+  margin-bottom: 60px;
+
+  color: var(--text-color-light);
+  letter-spacing: 0.15em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.about-us__image {
+  padding: 36px 0;
+}
