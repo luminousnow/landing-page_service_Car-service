@@ -5,6 +5,11 @@
   left: 0;
 
   z-index: 9999;
+  transition: background 250ms ease;
+}
+
+.js-color-changer {
+  background: var(--bg-color-dark);
 }
 
 .header__inner {
