@@ -4,46 +4,61 @@
       <h2 class="contact-us__title">Contact us</h2>
       <div class="contact-us__form-container">
         <form action="#" class="contact-us__form form">
-          <label class="form__label">
+          <div class="input__container">
             <input
+              id="name"
               type="text"
               name="name"
+              autocomplete="on"
+              placeholder=" "
               class="input-reset form__input"
-              placeholder="Name"
             />
-          </label>
-          <label class="form__label">
+            <label class="form__label" for="name">Name</label>
+          </div>
+          <div class="input__container">
             <input
+              id="last-name"
               type="text"
               name="last-name"
+              autocomplete="on"
+              placeholder=" "
               class="input-reset form__input"
-              placeholder="Last name"
             />
-          </label>
-          <label class="form__label">
+            <label class="form__label" for="last-name">Last name</label>
+          </div>
+          <div class="input__container">
             <input
+              id="email"
               type="email"
               name="email"
+              autocomplete="on"
+              placeholder=" "
               class="input-reset form__input"
-              placeholder="Email"
             />
-          </label>
-          <label class="form__label">
+            <label class="form__label" for="email">Email</label>
+          </div>
+          <div class="input__container">
             <input
+              id="phone"
               type="tel"
               name="phone"
+              autocomplete="on"
+              placeholder=" "
               class="input-reset form__input"
-              placeholder="Phone"
             />
-          </label>
-          <label class="form__label">
+            <label class="form__label" for="phone">Phone</label>
+          </div>
+          <div class="input__container">
             <textarea
+              id="message"
               type="text"
               name="message"
+              autocomplete="off"
+              placeholder=" "
               class="input-reset form__input form__input--wide"
-              placeholder="Message"
             ></textarea>
-          </label>
+            <label class="form__label" for="message">Message</label>
+          </div>
           <button type="submit" class="btn-reset form__btn">Send</button>
         </form>
       </div>

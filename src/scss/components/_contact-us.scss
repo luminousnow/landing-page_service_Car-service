@@ -24,47 +24,76 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &__input {
-    margin-bottom: 45px;
-    border-bottom: 1px solid #ffffff;
-    width: 197px;
-    height: 33px;
-    background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
 
-    letter-spacing: 0.15em;
-    color: #ffffff;
-  }
+.input__container {
+  position: relative;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center;
+}
 
-  &__input::placeholder {
-    letter-spacing: 0.15em;
-    color: #ffffff;
-  }
+.form__input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  width: 197px;
+  height: 33px;
+  padding: 10px 0;
+  background: transparent;
 
-  &__input--wide {
-    width: 440px;
-    height: 131px;
-    resize: none;
-  }
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  outline: none;
+}
 
-  &__btn {
-    padding: 11px;
-    min-width: 198px;
-    max-width: 440px;
-    overflow: hidden;
-    background: var(--accent-color);
+.form__label {
+  position: absolute;
+  top: 5px;
+  left: 0;
 
-    font-weight: 500;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: var(--text-color-light);
+  color: var(--text-color-light);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.15em;
 
-    transition: all 300ms ease-in-out;
+  cursor: text;
+  transition: all 300ms ease-in-out;
+}
 
-    &:hover,
-    &:focus,
-    &:active {
-      background: var(--bg-color-light);
-      color: var(--accent-color);
-    }
-  }
+.form__input:focus ~ .form__label,
+.form__input:not(:focus).form__input:not(:placeholder-shown) ~ .form__label {
+  font-size: 12px;
+
+  transform: translateY(-20px);
+}
+
+.form__input--wide {
+  width: 440px;
+  height: 131px;
+  resize: none;
+}
+
+.form__btn {
+  padding: 11px;
+  min-width: 198px;
+  max-width: 440px;
+  overflow: hidden;
+  background: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--text-color-light);
+
+  transition: all 300ms ease-in-out;
+}
+
+.form__btn:hover,
+.form__btn:focus,
+.form__btn:active {
+  background: var(--bg-color-light);
+  color: var(--accent-color);
 }
