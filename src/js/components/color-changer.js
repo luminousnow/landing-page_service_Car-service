@@ -3,7 +3,6 @@ const offset = 20;
 
 const onScroll = function (e) {
   let scrollPosition = window.scrollY;
-  console.log("TCL: onScroll -> scrollPosition", scrollPosition);
 
   if (scrollPosition > offset) {
     header.classList.add("js-color-changer");
