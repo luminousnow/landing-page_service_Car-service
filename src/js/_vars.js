@@ -7,4 +7,5 @@ export default {
   navigation: document.querySelector(".navigation"),
   burgerButton: document.querySelector(".burger-button"),
   menuLinkList: document.querySelectorAll(".nav__link"),
+  languageList: document.querySelectorAll(".language__item"),
 };
