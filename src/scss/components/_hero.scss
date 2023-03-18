@@ -25,7 +25,6 @@
 }
 
 .hero__title {
-  width: 791px;
   margin-bottom: 53px;
 
   color: var(--text-color-light);
@@ -34,6 +33,10 @@
   line-height: 150%;
 
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    width: 791px;
+  }
 }
 
 .btn__hero {
