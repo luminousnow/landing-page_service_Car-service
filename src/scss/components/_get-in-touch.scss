@@ -1,35 +1,73 @@
 .get-in-touch {
-  height: 98px;
-
   background: var(--bg-color-light);
+
+  @media (min-width: 768px) {
+    height: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 98px;
+  }
 }
 
 .get-in-touch__inner {
-  position: relative;
-  height: 100%;
+  @media (min-width: 768px) {
+    position: relative;
+    height: 100%;
+  }
 }
 
 .get-in-touch__list {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
+  margin: -15px 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .get-in-touch__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 386px;
-  padding: 37px;
+  min-height: 234px;
+  padding: 30px;
 
   background: #ffffff;
 
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 194px;
+    padding: 37px;
+  }
 }
 
 .get-in-touch__icon {
