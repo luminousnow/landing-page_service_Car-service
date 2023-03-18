@@ -11,8 +11,18 @@
 
   color: var(--text-color-dark);
   font-weight: 900;
-  font-size: 148px;
+  font-size: 105px;
+  line-height: 1.1;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 110px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 148px;
+  }
 }
 
 .work-process__title {
@@ -26,21 +36,44 @@
 
 .work-process__list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .process-card {
-  width: 386px;
-  min-height: 150px;
+  width: 100%;
+  min-height: 183px;
   padding: 30px;
 
   background: #ffffff;
 
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 768px) {
+    width: 380px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 150px;
+    padding: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
+
 .process-card__title {
   margin-bottom: 15px;
 
