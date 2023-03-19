@@ -27,6 +27,18 @@ const languageSwitcher = function (e) {
   burgerButtonToggler();
 };
 
+const serviceSelectorOver = function (e) {
+  const hendledServiceCard = e.currentTarget;
+
+  hendledServiceCard.classList.add("card--active");
+};
+
+const serviceSelectorOut = function (e) {
+  const hendledServiceCard = e.currentTarget;
+
+  hendledServiceCard.classList.remove("card--active");
+};
+
 // Changed burger button when it`s cliked
 vars.burgerButton.addEventListener("click", burgerButtonToggler);
 
@@ -38,4 +50,14 @@ vars.menuLinkList.forEach((linkElement) => {
 // Changed active language indicator
 vars.languageList.forEach((el) =>
   el.addEventListener("click", languageSwitcher)
+);
+
+// Showing the service card option when the mouse cursor is over the card
+vars.servicesList.forEach((serviceCard) =>
+  serviceCard.addEventListener("mouseover", serviceSelectorOver)
+);
+
+// Hiding the service card option when the mouse cursor is over the card
+vars.servicesList.forEach((serviceCard) =>
+  serviceCard.addEventListener("mouseout", serviceSelectorOut)
 );

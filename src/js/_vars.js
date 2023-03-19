@@ -8,4 +8,5 @@ export default {
   burgerButton: document.querySelector(".burger-button"),
   menuLinkList: document.querySelectorAll(".nav__link"),
   languageList: document.querySelectorAll(".language__item"),
+  servicesList: document.querySelectorAll(".card"),
 };
